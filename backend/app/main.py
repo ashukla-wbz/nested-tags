@@ -11,7 +11,7 @@ app = FastAPI()
 # Allow CORS for frontend deployment (replace later with correct domain)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://nested-tags.vercel.app/"], 
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
